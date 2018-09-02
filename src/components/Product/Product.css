@@ -1,0 +1,54 @@
+.product {
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .product__content {
+    text-decoration: none;
+    color: #333333;
+    position: relative;
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end; }
+  .product__figure {
+    margin: 0; }
+  .product__more {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 15px 30px;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #FFFFFF;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: top .3s ease-in-out; }
+  .product__content:hover .product__more {
+    top: 0; }
+  .product__image {
+    max-height: 180px;
+    align-self: center; }
+  .product__brewery {
+    font-family: "Anton-Regular", sans-serif;
+    font-size: 22px;
+    margin: 0 0 25px; }
+  .product__brewery-name {
+    display: block; }
+  .product__more-info {
+    font-size: 20px; }
+  .product__find-more {
+    margin-top: auto;
+    margin-bottom: 0; }
+  .product__icon {
+    margin-left: 10px; }
+  .product__out {
+    display: block;
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 16px; }

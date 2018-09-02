@@ -1,0 +1,36 @@
+@media all and (min-width: 992px) {
+  .select {
+    display: flex;
+    align-items: center; } }
+
+.select__label {
+  display: block;
+  color: #3399CC;
+  font-family: "Anton-Regular", sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px; }
+  @media all and (min-width: 992px) {
+    .select__label {
+      margin-bottom: 0;
+      margin-right: 10px; } }
+
+.select__wrapper {
+  position: relative; }
+
+.select__select {
+  font-family: "Lato-Regular", sans-serif;
+  color: #333333;
+  background-color: #FFFFFF;
+  background-image: none;
+  border-radius: 0;
+  border: 1px solid #3399CC;
+  padding: 5px 28px 5px 5px;
+  -webkit-appearance: none;
+  appearance: none; }
+
+.select__icon {
+  position: absolute;
+  font-size: 18px;
+  right: 6px;
+  top: 5.5px;
+  color: #3399CC; }

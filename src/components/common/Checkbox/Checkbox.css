@@ -1,0 +1,28 @@
+.checkbox {
+  position: relative;
+  display: block;
+  margin: 5px 0; }
+  .checkbox__input {
+    position: absolute;
+    opacity: 0; }
+  .checkbox__text {
+    position: relative;
+    display: flex;
+    align-items: center; }
+    .checkbox__text::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #333333;
+      margin-right: 7px; }
+    .checkbox__text::after {
+      content: '\f00c';
+      font-family: "FontAwesome";
+      position: absolute;
+      left: 3px;
+      color: #FFFFFF; }
+  .checkbox__input:checked ~ .checkbox__text::before {
+    background-color: #3399CC; }
+  .checkbox__input:checked ~ .checkbox__text::after {
+    display: block; }

@@ -1,0 +1,45 @@
+@import './assets/sass/mixins.scss';
+
+.checkbox {
+  position: relative;
+  display: block;
+  margin: 5px 0;
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid $color-mine-shaft;
+      margin-right: 7px;
+    }
+
+    &::after {
+      content: '\f00c';
+      font-family: "FontAwesome";
+      position: absolute;
+      left: 3px;
+      color: $color-white;
+    }
+  }
+
+  &__input:checked ~ &__text {
+    &::before {
+      background-color: $color-curious-blue;
+    }
+
+    &::after {
+      display: block;
+    }
+  }
+}

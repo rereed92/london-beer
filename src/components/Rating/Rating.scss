@@ -1,0 +1,14 @@
+@import './assets/sass/mixins.scss';
+
+.rating {
+
+  &__icon {
+    color: $color-gallery;
+    font-size: 22px;
+    padding: 0 3px;
+    
+    &--fill {
+      color: $color-supernova;
+    }
+  }
+}

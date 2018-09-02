@@ -1,0 +1,29 @@
+.filters {
+  position: absolute;
+  background: #FFFFFF;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 15px;
+  top: 83px;
+  box-shadow: 0 5px 5px rgba(51, 51, 51, 0.5);
+  transform: translateY(calc(-100% - 10px));
+  transition: transform .4s linear; }
+  .filters--visible {
+    transform: translateY(0%); }
+  @media all and (min-width: 992px) {
+    .filters {
+      display: block;
+      position: relative;
+      left: auto;
+      right: auto;
+      top: auto;
+      box-shadow: none;
+      padding: 0;
+      transform: none;
+      margin-top: 60px;
+      padding-right: 20px; } }
+  .filters__fieldset {
+    margin: 0; }
+  .filters__wrapper {
+    padding: 0 15px; }

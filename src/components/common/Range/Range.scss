@@ -1,0 +1,69 @@
+@import './assets/sass/mixins.scss';
+
+.range {
+  width: 100%;
+  height: 4px;
+  margin: 30px 0;
+  background-color: $color-mine-shaft; 
+  position: relative;
+
+  &__value {
+    position: absolute;
+    bottom: -25px;
+
+    &--min {
+      left: 0;
+    }
+
+    &--max {
+      right: 0;
+    }
+  }
+
+  * {
+    touch-action: none;
+    user-select: none;
+  }
+
+  .noUi-connects {
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .noUi-connect {
+    background-color: $color-curious-blue;
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    right: 1px;
+    transform-origin: 0 0;
+  }
+
+  .noUi-origin {
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: auto;
+    right: 0;
+    height: 0;
+    width: 100%;
+    transform-origin: 0 0;
+  }
+
+  .noUi-handle {
+    cursor: default;
+    position: absolute;
+    right: -7px;
+    top: -25px;
+
+    &::before {
+      content: '\f08d';
+      font-family: "FontAwesome";
+      font-size: 24px;
+    }
+  }
+}

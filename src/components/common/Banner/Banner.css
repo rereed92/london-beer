@@ -1,0 +1,14 @@
+.banner {
+  color: #FFFFFF;
+  font-family: "Anton-Regular", sans-serif;
+  font-size: 24px;
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+  left: -7px;
+  right: -7px;
+  padding: 10px 15px;
+  transform: rotate(-20deg) skewX(-20deg); }
+  .banner__content {
+    display: inline-block;
+    transform: skew(20deg); }

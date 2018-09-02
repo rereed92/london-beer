@@ -1,0 +1,21 @@
+@import './assets/sass/mixins.scss';
+
+.header {
+  background-image: url('../../assets/images/craft-beer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+
+  @include md {
+    height: 300px;
+  }
+
+  @include lg {
+    height: 400px;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+}

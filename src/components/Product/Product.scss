@@ -1,0 +1,79 @@
+@import './assets/sass/mixins.scss';
+
+.product {
+  text-align: center;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__content {
+    text-decoration: none;
+    color: $color-mine-shaft;
+    position: relative;
+    padding: 20px 0;
+    overflow: hidden;
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__more {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 15px 30px;
+    background-color: rgba($color-mine-shaft, .9);
+    color: $color-white;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: top .3s ease-in-out;
+  }
+
+  &__content:hover &__more {
+    top: 0;
+  }
+
+  &__image {
+    max-height: 180px;
+    align-self: center;
+  }
+
+  &__brewery {
+    font-family: $font-family-heading;
+    font-size: 22px;
+    margin: 0 0 25px;
+  }
+
+  &__brewery-name {
+    display: block;
+  }
+
+  &__more-info {
+    font-size: 20px;
+  }
+
+  &__find-more {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+
+  &__out {
+    display: block;
+    font-family: $font-family-base;
+    font-size: 16px;
+  }
+}

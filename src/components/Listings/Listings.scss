@@ -1,0 +1,50 @@
+@import './assets/sass/mixins.scss';
+
+.listings {
+  position: relative;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid $color-curious-blue;
+    position: relative;
+    z-index: 3;
+    background-color: $color-white;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 3;
+      background-color: $color-white;
+      width: 15px;
+      top: 0;
+      bottom: 0;
+    }
+
+    &::before {
+      left: -15px;
+    }
+
+    &::after {
+      right: -15px;
+    }
+
+    @include lg {
+      justify-content: flex-end;
+      padding: 30px 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__filters {
+    display: inline-block;
+
+    @include lg {
+      display: none;
+    }
+  }
+}

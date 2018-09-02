@@ -1,0 +1,46 @@
+@import './assets/sass/mixins.scss';
+
+.select {
+
+  @include lg {
+    display: flex;
+    align-items: center;
+  }
+
+  &__label {
+    display: block;
+    color: $color-curious-blue;
+    font-family: $font-family-heading;
+    font-size: 18px;
+    margin-bottom: 5px;
+
+    @include lg {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__select {
+    font-family: $font-family-base;
+    color: $color-mine-shaft;
+    background-color: $color-white;;
+    background-image: none;
+    border-radius: 0;
+    border: 1px solid $color-curious-blue;
+    padding: 5px 28px 5px 5px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  &__icon {
+    position: absolute;
+    font-size: 18px;
+    right: 6px;
+    top: 5.5px;
+    color: $color-curious-blue;
+  }
+}

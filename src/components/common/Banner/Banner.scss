@@ -1,0 +1,19 @@
+@import './assets/sass/mixins.scss';
+
+.banner {
+  color: $color-white;
+  font-family: $font-family-heading;
+  font-size: 24px;
+  position: absolute;
+  z-index: 1;
+  top: 90px;
+  left: -7px;
+  right: -7px;
+  padding: 10px 15px;
+  transform: rotate(-20deg) skewX(-20deg);
+
+  &__content {
+    display: inline-block;
+    transform: skew(20deg);
+  }
+}

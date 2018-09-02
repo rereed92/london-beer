@@ -1,0 +1,14 @@
+.header {
+  background-image: url("../../assets/images/craft-beer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px; }
+  @media all and (min-width: 768px) {
+    .header {
+      height: 300px; } }
+  @media all and (min-width: 992px) {
+    .header {
+      height: 400px; } }
+  .header__content {
+    display: flex;
+    align-items: center; }

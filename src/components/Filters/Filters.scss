@@ -1,0 +1,39 @@
+@import './assets/sass/mixins.scss';
+
+.filters {
+  position: absolute;
+  background: $color-white;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 0 15px;
+  top: 83px;
+  box-shadow: 0 5px 5px rgba($color-mine-shaft, .5);
+  transform: translateY(calc(-100% - 10px));
+  transition: transform .4s linear;
+
+  &--visible {
+    transform: translateY(0%);
+  }
+
+  @include lg {
+    display: block;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    box-shadow: none;
+    padding: 0;
+    transform: none;
+    margin-top: 60px;
+    padding-right: 20px;
+  }
+
+  &__fieldset {
+    margin: 0;
+  }
+
+  &__wrapper {
+    padding: 0 15px;
+  }
+}

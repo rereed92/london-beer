@@ -1,0 +1,56 @@
+@import './assets/sass/mixins.scss';
+
+.button {
+  padding: 15px 20px;
+  background-color: $color-curious-blue;
+  border: 2px solid $color-curious-blue;
+  color: $color-white;
+  font-family: $font-family-heading;
+  text-decoration: none;
+  position: relative;
+  transform: perspective(1px) translateZ(0);
+
+  &--slim {
+    padding: 10px 20px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-white;
+    transform: scaleX(0);
+    transform-origin: 50%;
+    transition: transform .3s ease-in-out;
+  }
+
+  &:hover:enabled {
+    color: $color-curious-blue;
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:disabled {
+    border-color: rgba($color-mine-shaft, .9);
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba($color-mine-shaft, .9);
+    }
+  }
+}
