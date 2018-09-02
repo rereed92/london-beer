@@ -33,9 +33,6 @@
 }
 
 @mixin column($width) {
-  // $one-twelfth: (100% / 12);
-  // $col-width: $one-twelfth * $width;
-  // flex-basis: calc(#{$col-width} - (#{$gutter} * 2));
   flex-basis: percentage($width / 12);
   max-width: percentage($width / 12);
   padding: 0 15px;

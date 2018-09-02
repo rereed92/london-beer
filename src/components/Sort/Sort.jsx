@@ -5,8 +5,6 @@ import Select from '../common/Select/Select';
 
 import { sortProducts } from '../../actions/productActions';
 
-import './Sort';
-
 class Sort extends PureComponent {
   constructor(props) {
     super(props);
