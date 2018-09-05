@@ -1,5 +1,10 @@
 @import 'variables.scss';
 
+@mixin fontawesome {
+  font-family: 'Font Awesome\ 5 Free'; 
+  font-weight: 900;
+}
+
 @mixin container {
   max-width: $content-max-width;
   margin: 0 auto;

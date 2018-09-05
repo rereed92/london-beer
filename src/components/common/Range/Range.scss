@@ -61,8 +61,8 @@
     top: -25px;
 
     &::before {
+      @include fontawesome;
       content: '\f08d';
-      font-family: "FontAwesome";
       font-size: 24px;
     }
   }

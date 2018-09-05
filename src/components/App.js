@@ -10,11 +10,7 @@ import { Footer } from './Footer/Footer';
 import '../assets/sass/global.css';
 
 export const App = () => {
-  library.add(faBeer);
-  library.add(faExternalLinkAlt);
-  library.add(faCheck);
-  library.add(faThumbtack);
-  library.add(faChevronDown);
+  library.add(faBeer, faExternalLinkAlt, faCheck, faThumbtack, faChevronDown);
 
   return (
     <React.Fragment>
