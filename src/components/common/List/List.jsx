@@ -14,7 +14,10 @@ List.propTypes = {
   isUnstyled: PropTypes.bool,
   isInline: PropTypes.bool,
   className: PropTypes.string,
-  children: PropTypes.array
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node
+  ])
 };
 
 List.defaultProps = {
